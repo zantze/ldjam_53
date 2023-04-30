@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxd80embg3m2f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hy4tc"]
+font_size = 35
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 183.0
+offset_bottom = 156.0
+
+[node name="heat" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 38.0
+offset_right = 856.0
+offset_bottom = 114.0
+max_value = 10.0
+scrollable = false
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 572.0
+offset_top = 35.0
+offset_right = 612.0
+offset_bottom = 61.0
+text = "Heat"
+
+[node name="deliveries_done" type="Label" parent="."]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 541.0
+offset_right = 648.0
+offset_bottom = 567.0
+text = "Deliveries done"
+
+[node name="count" type="Label" parent="deliveries_done"]
+offset_left = -1.0
+offset_top = 21.0
+offset_right = 119.0
+offset_bottom = 73.0
+text = "0"
+label_settings = SubResource("LabelSettings_hy4tc")
+horizontal_alignment = 1

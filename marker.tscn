@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://badoseblr07pm"]
+
+[ext_resource type="PackedScene" uid="uid://dejgf8lorh5b3" path="res://models/marker.glb" id="1_m1y7d"]
+[ext_resource type="Script" path="res://MarkerVisual.gd" id="2_ahc0f"]
+
+[node name="marker" instance=ExtResource("1_m1y7d")]
+script = ExtResource("2_ahc0f")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="2"]
+light_color = Color(0.942259, 0.39857, 0.840864, 1)
+light_energy = 2.219

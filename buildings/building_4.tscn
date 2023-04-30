@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bev747vbusryv"]
+
+[ext_resource type="PackedScene" uid="uid://ddunp4kwpxo54" path="res://blender/building4.glb" id="1_focm3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6lbbi"]
+points = PackedVector3Array(-24.7107, 3.36991, -13.2904, -28.4071, 3.36991, 2.8133, -24.7107, 5.48536, -13.2904, 23.1098, 3.36991, -2.31158, -28.4071, 5.48536, 2.8133, 19.4084, 3.36991, 13.7948, -28.0188, 21.0263, 2.77353, -24.3779, 21.0263, -13.0863, 23.1098, 5.48536, -2.31158, 19.4084, 5.48536, 13.7948, 19.0755, 21.0263, 13.588, 22.7164, 21.0263, -2.27181)
+
+[node name="building4" instance=ExtResource("1_focm3")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="building42" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building42/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_6lbbi")

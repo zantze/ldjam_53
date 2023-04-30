@@ -1,0 +1,178 @@
+[gd_scene load_steps=6 format=3 uid="uid://drp2dxt0cvarp"]
+
+[ext_resource type="PackedScene" uid="uid://cubtmxsaw18qm" path="res://city.tscn" id="1_tphs7"]
+[ext_resource type="Script" path="res://marker_spawn.gd" id="2_lfouj"]
+[ext_resource type="PackedScene" uid="uid://badoseblr07pm" path="res://marker.tscn" id="3_4rf3g"]
+[ext_resource type="AudioStream" uid="uid://dd1lv5gjalxy8" path="res://sounds/Zipper.mp3" id="4_rf0rw"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_spqnw"]
+radius = 0.890986
+
+[node name="Node3D" type="Node3D"]
+
+[node name="cITY" parent="." instance=ExtResource("1_tphs7")]
+
+[node name="markers" type="Node3D" parent="."]
+
+[node name="marker_spawn" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.4387, 3.0503, -38.0677)
+script = ExtResource("2_lfouj")
+enabled = true
+
+[node name="marker" parent="markers/marker_spawn" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn2" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.6552, -13.6898, -99.9419)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn2" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn2/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn2"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn3" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -122.108, -6.94147, -104.252)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn3" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn3/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn3"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn4" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.4755, 2.74444, -57.5894)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn4" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn4/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn4"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn5" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.7619, -25.5341, -276.666)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn5" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn5/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn5"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn6" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.75588, -22.796, -255.572)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn6" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn6/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn6"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn8" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.72008, -17.3639, -168.408)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn8" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn8/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn8"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn9" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -127.302, -16.9674, -159.855)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn9" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn9"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn9/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn9"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[node name="marker_spawn7" type="Node3D" parent="markers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -185.1, -20.6197, -212.376)
+script = ExtResource("2_lfouj")
+
+[node name="marker" parent="markers/marker_spawn7" instance=ExtResource("3_4rf3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423079, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="markers/marker_spawn7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="markers/marker_spawn7/Area3D"]
+shape = SubResource("CylinderShape3D_spqnw")
+
+[node name="zipper" type="AudioStreamPlayer3D" parent="markers/marker_spawn7"]
+stream = ExtResource("4_rf0rw")
+volume_db = -20.18
+
+[connection signal="body_entered" from="markers/marker_spawn/Area3D" to="markers/marker_spawn" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn2/Area3D" to="markers/marker_spawn2" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn3/Area3D" to="markers/marker_spawn3" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn4/Area3D" to="markers/marker_spawn4" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn5/Area3D" to="markers/marker_spawn5" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn6/Area3D" to="markers/marker_spawn6" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn8/Area3D" to="markers/marker_spawn8" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn9/Area3D" to="markers/marker_spawn9" method="_on_body_entered"]
+[connection signal="body_entered" from="markers/marker_spawn7/Area3D" to="markers/marker_spawn7" method="_on_body_entered"]

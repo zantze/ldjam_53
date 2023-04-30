@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://c610rtmyfkblk"]
+
+[ext_resource type="PackedScene" uid="uid://ul1syq47n2lg" path="res://blender/prison.glb" id="1_xy35w"]
+[ext_resource type="PackedScene" uid="uid://bcyvuhgfseis0" path="res://blender/character_model_sitting.glb" id="2_as5sv"]
+[ext_resource type="Script" path="res://prisoncharactermodel.gd" id="3_isvdr"]
+[ext_resource type="AudioStream" uid="uid://dbiks10iprcen" path="res://sounds/door_shut.mp3" id="4_llqnn"]
+[ext_resource type="Script" path="res://endingroaminglight.gd" id="4_rp8j2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.00777288, -0.99997, 0, 0.99997, 0.00777288, 1, 3.39763e-10, -4.37101e-08, -0.074059, 0.132506, -0.920651)
+
+[node name="prison" parent="." instance=ExtResource("1_xy35w")]
+transform = Transform3D(1.14976, 0, 0, 0, 1.14976, 0, 0, 0, 1.14976, -1.38749, 0.0637101, 0.936682)
+
+[node name="character_model_sitting" parent="." instance=ExtResource("2_as5sv")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.17197, -1.2117, -0.950029)
+
+[node name="Skeleton3D" parent="character_model_sitting/Armature" index="0"]
+bones/0/position = Vector3(0.00187617, 0.973624, -0.0324016)
+bones/0/rotation = Quaternion(0.114552, -1.25294e-17, -7.87737e-17, 0.993417)
+bones/4/rotation = Quaternion(0.523497, -0.153084, -0.794551, 0.266841)
+bones/5/rotation = Quaternion(0.561417, -0.136073, 0.138042, 0.804512)
+bones/7/rotation = Quaternion(0.138883, 0.201314, 0.955793, 0.16323)
+bones/8/rotation = Quaternion(0.176481, 0.0494932, -0.0665872, 0.980801)
+bones/10/position = Vector3(0.00186228, 0.9722, -0.0330444)
+bones/10/rotation = Quaternion(0.702399, 0.0929878, 0.700963, 0.0814863)
+bones/11/position = Vector3(0.0786706, 0.750965, 0.00469667)
+bones/11/rotation = Quaternion(0.354412, 0.586414, 0.468614, 0.557595)
+bones/12/rotation = Quaternion(-0.0864971, 0.0531772, 0.527673, 0.843358)
+bones/13/rotation = Quaternion(-0.0227096, 0.00189058, -0.199061, 0.979722)
+bones/14/position = Vector3(-0.074946, 0.750682, 0.0410338)
+bones/14/rotation = Quaternion(0.383711, -0.383449, -0.619549, 0.567355)
+bones/15/rotation = Quaternion(0.0142129, -0.000519845, -0.610706, 0.79173)
+bones/16/rotation = Quaternion(-0.0755297, 0.0621377, 0.283282, 0.954036)
+
+[node name="AnimationPlayer" parent="character_model_sitting" index="1"]
+reset_on_save = false
+script = ExtResource("3_isvdr")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.797626, 0, -0.603152, 0, 1, 0, 0.603152, 0, 0.797626, -1.032, -0.011, 1.716)
+fov = 33.6
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 1.48511e-17, 0, -1.48511e-17, 1, 1.54783, -0.258521, 2.74995)
+script = ExtResource("4_rp8j2")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_llqnn")
+volume_db = -16.357
+autoplay = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "YOU GOT CAUGHT BY POLICE!"
+
+[node name="Label2" type="Label" parent="Control"]
+offset_left = -5.0
+offset_top = 38.0
+offset_right = 284.0
+offset_bottom = 64.0
+text = "yOU MADE X AMOUNT OF DELIVERIES"
+
+[editable path="character_model_sitting"]

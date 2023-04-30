@@ -1,0 +1,1358 @@
+[gd_scene load_steps=118 format=3 uid="uid://cqfnxm4lnk6lx"]
+
+[ext_resource type="AudioStream" uid="uid://42nqaxawrmol" path="res://sounds/music.mp3" id="2_eaudj"]
+[ext_resource type="PackedScene" uid="uid://n3gero6og1wi" path="res://Player.tscn" id="2_txidw"]
+[ext_resource type="Script" path="res://rail.gd" id="3_ifhow"]
+[ext_resource type="PackedScene" uid="uid://drp2dxt0cvarp" path="res://city_with_entitys.tscn" id="3_ob0ys"]
+[ext_resource type="PackedScene" uid="uid://i0s3unmtqa72" path="res://ball_enemy.tscn" id="4_1yqyx"]
+[ext_resource type="PackedScene" uid="uid://xpooxijk3vx7" path="res://models/rail.glb" id="4_8d6r1"]
+[ext_resource type="PackedScene" uid="uid://cxd80embg3m2f" path="res://control.tscn" id="7_2oehm"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l6sgo"]
+
+[sub_resource type="Sky" id="Sky_quw46"]
+sky_material = SubResource("ProceduralSkyMaterial_l6sgo")
+
+[sub_resource type="Environment" id="Environment_14o6f"]
+background_mode = 2
+sky = SubResource("Sky_quw46")
+fog_enabled = true
+fog_light_color = Color(0.0392157, 0.0509804, 0.0745098, 1)
+fog_light_energy = 3.19
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ts4u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2ttky"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ogkw1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s3diu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i1tdj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rd3gu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c7rek"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_omm2c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_77kby"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oiisi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bnldk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qeou1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ejo4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_buluk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m56p3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_85p3l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_50bqx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3yuhu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w2h5o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_epumm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ciif"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ibtet"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oswbg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3uvtm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bxxlu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i3skk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_shths"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e3tdf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q48w2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e8nbl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0hvth"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_icyuw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r0i7b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_apvwb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4axm3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ipa8c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t1151"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cors4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f50to"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e8icf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3kjaw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b4p8y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ovvsx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q7a8x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jagfs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jcyy5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vnosu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ekh5e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gxaka"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vbhu1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cgohr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o71vg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lh3bt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3ed5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mya0l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bohp3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3hdnh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5voph"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y1wkm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gvu5y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x2452"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_okflh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x1ook"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6sm1a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gn87b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_du8c2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eqj31"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kp5vn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lxs1p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bilon"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qgn6j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_itb1d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eh6ri"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3odyt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ady0v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_66jvy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rehco"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h3riv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6tddw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0iql3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0syxn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4p1q6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2f4f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ndkgx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ipdsc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0u3ms"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_msodg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lwpco"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mkl6c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hx4nb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_raq1d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kf1am"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ooujy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r35m7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_83a28"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_blwdj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dycw7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eln4o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o4iyj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x4m0x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_owchx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mi3bs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wguec"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dlrdx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2p58n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x2wjd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_17ot5"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_14o6f")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.00181484, 0.999998, 0, -0.999998, -0.00181484, -0.579807, 4.01204, 6.06989)
+light_color = Color(0.882353, 0.847059, 0.843137, 1)
+light_energy = 1.457
+shadow_bias = 0.0
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("2_txidw")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.7303, 4.06845, -63.6396)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("2_eaudj")
+volume_db = -9.37
+autoplay = true
+
+[node name="Node3D2" parent="." instance=ExtResource("3_ob0ys")]
+
+[node name="rail" type="Node3D" parent="."]
+transform = Transform3D(0.998986, 0, 0.0450143, 0, 1, 0, -0.0450143, 0, 0.998986, -43.4603, -0.393488, -45.9227)
+script = ExtResource("3_ifhow")
+
+[node name="start" type="Node3D" parent="rail"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.400009, 1.5829, 10.9537)
+
+[node name="end" type="Node3D" parent="rail"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.454784, -12.5489, -23.3996)
+
+[node name="rail" parent="rail" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(1, 0, 0, 0, 0.923324, 0.384021, 0, -0.384021, 0.923324, 0.458908, -1.87924, 6.16325)
+
+[node name="rail2" parent="rail" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(1, 0, 0, 0, 0.923324, 0.384021, 0, -0.384021, 0.923324, 0.458908, -5.70584, -3.00065)
+
+[node name="rail3" parent="rail" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(1, 0, 0, 0, 0.923324, 0.384021, 0, -0.384021, 0.923324, 0.458908, -9.50682, -12.1864)
+
+[node name="rail4" parent="rail" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(1, 0, 0, 0, 0.923324, 0.384021, 0, -0.384021, 0.923324, 0.458908, -12.3402, -19.0678)
+
+[node name="joints" type="Node3D" parent="rail"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.400009, 1.5829, 10.9537)
+
+[node name="joint" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0547752, -14.1318, -34.3533)
+
+[node name="@@22604" type="Area3D" parent="rail/joints/joint" groups=["rail"]]
+
+[node name="@@22603" type="CollisionShape3D" parent="rail/joints/joint/@@22604"]
+shape = SubResource("BoxShape3D_6ts4u")
+
+[node name="@joint@22607" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0518261, -13.3709, -32.5037)
+
+[node name="@@22606" type="Area3D" parent="rail/joints/@joint@22607" groups=["rail"]]
+
+[node name="@@22605" type="CollisionShape3D" parent="rail/joints/@joint@22607/@@22606"]
+shape = SubResource("BoxShape3D_2ttky")
+
+[node name="@joint@22610" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0488769, -12.61, -30.6541)
+
+[node name="@@22609" type="Area3D" parent="rail/joints/@joint@22610" groups=["rail"]]
+
+[node name="@@22608" type="CollisionShape3D" parent="rail/joints/@joint@22610/@@22609"]
+shape = SubResource("BoxShape3D_ogkw1")
+
+[node name="@joint@22613" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0459278, -11.8492, -28.8044)
+
+[node name="@@22612" type="Area3D" parent="rail/joints/@joint@22613" groups=["rail"]]
+
+[node name="@@22611" type="CollisionShape3D" parent="rail/joints/@joint@22613/@@22612"]
+shape = SubResource("BoxShape3D_s3diu")
+
+[node name="@joint@22616" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0429786, -11.0883, -26.9548)
+
+[node name="@@22615" type="Area3D" parent="rail/joints/@joint@22616" groups=["rail"]]
+
+[node name="@@22614" type="CollisionShape3D" parent="rail/joints/@joint@22616/@@22615"]
+shape = SubResource("BoxShape3D_i1tdj")
+
+[node name="@joint@22619" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0400295, -10.3274, -25.1052)
+
+[node name="@@22618" type="Area3D" parent="rail/joints/@joint@22619" groups=["rail"]]
+
+[node name="@@22617" type="CollisionShape3D" parent="rail/joints/@joint@22619/@@22618"]
+shape = SubResource("BoxShape3D_rd3gu")
+
+[node name="@joint@22622" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0370803, -9.56657, -23.2556)
+
+[node name="@@22621" type="Area3D" parent="rail/joints/@joint@22622" groups=["rail"]]
+
+[node name="@@22620" type="CollisionShape3D" parent="rail/joints/@joint@22622/@@22621"]
+shape = SubResource("BoxShape3D_c7rek")
+
+[node name="@joint@22625" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0341312, -8.8057, -21.406)
+
+[node name="@@22624" type="Area3D" parent="rail/joints/@joint@22625" groups=["rail"]]
+
+[node name="@@22623" type="CollisionShape3D" parent="rail/joints/@joint@22625/@@22624"]
+shape = SubResource("BoxShape3D_omm2c")
+
+[node name="@joint@22628" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.031182, -8.04483, -19.5564)
+
+[node name="@@22627" type="Area3D" parent="rail/joints/@joint@22628" groups=["rail"]]
+
+[node name="@@22626" type="CollisionShape3D" parent="rail/joints/@joint@22628/@@22627"]
+shape = SubResource("BoxShape3D_77kby")
+
+[node name="@joint@22631" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0282329, -7.28397, -17.7068)
+
+[node name="@@22630" type="Area3D" parent="rail/joints/@joint@22631" groups=["rail"]]
+
+[node name="@@22629" type="CollisionShape3D" parent="rail/joints/@joint@22631/@@22630"]
+shape = SubResource("BoxShape3D_oiisi")
+
+[node name="@joint@22634" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0252837, -6.5231, -15.8571)
+
+[node name="@@22633" type="Area3D" parent="rail/joints/@joint@22634" groups=["rail"]]
+
+[node name="@@22632" type="CollisionShape3D" parent="rail/joints/@joint@22634/@@22633"]
+shape = SubResource("BoxShape3D_bnldk")
+
+[node name="@joint@22637" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0223346, -5.76223, -14.0075)
+
+[node name="@@22636" type="Area3D" parent="rail/joints/@joint@22637" groups=["rail"]]
+
+[node name="@@22635" type="CollisionShape3D" parent="rail/joints/@joint@22637/@@22636"]
+shape = SubResource("BoxShape3D_qeou1")
+
+[node name="@joint@22640" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0193854, -5.00136, -12.1579)
+
+[node name="@@22639" type="Area3D" parent="rail/joints/@joint@22640" groups=["rail"]]
+
+[node name="@@22638" type="CollisionShape3D" parent="rail/joints/@joint@22640/@@22639"]
+shape = SubResource("BoxShape3D_6ejo4")
+
+[node name="@joint@22643" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0164363, -4.24049, -10.3083)
+
+[node name="@@22642" type="Area3D" parent="rail/joints/@joint@22643" groups=["rail"]]
+
+[node name="@@22641" type="CollisionShape3D" parent="rail/joints/@joint@22643/@@22642"]
+shape = SubResource("BoxShape3D_buluk")
+
+[node name="@joint@22646" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0134871, -3.47962, -8.45869)
+
+[node name="@@22645" type="Area3D" parent="rail/joints/@joint@22646" groups=["rail"]]
+
+[node name="@@22644" type="CollisionShape3D" parent="rail/joints/@joint@22646/@@22645"]
+shape = SubResource("BoxShape3D_m56p3")
+
+[node name="@joint@22649" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010538, -2.71875, -6.60908)
+
+[node name="@@22648" type="Area3D" parent="rail/joints/@joint@22649" groups=["rail"]]
+
+[node name="@@22647" type="CollisionShape3D" parent="rail/joints/@joint@22649/@@22648"]
+shape = SubResource("BoxShape3D_85p3l")
+
+[node name="@joint@22652" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00758882, -1.95788, -4.75947)
+
+[node name="@@22651" type="Area3D" parent="rail/joints/@joint@22652" groups=["rail"]]
+
+[node name="@@22650" type="CollisionShape3D" parent="rail/joints/@joint@22652/@@22651"]
+shape = SubResource("BoxShape3D_50bqx")
+
+[node name="@joint@22655" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00463967, -1.19702, -2.90985)
+
+[node name="@@22654" type="Area3D" parent="rail/joints/@joint@22655" groups=["rail"]]
+
+[node name="@@22653" type="CollisionShape3D" parent="rail/joints/@joint@22655/@@22654"]
+shape = SubResource("BoxShape3D_3yuhu")
+
+[node name="@joint@22658" type="Node3D" parent="rail/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169052, -0.436147, -1.06024)
+
+[node name="@@22657" type="Area3D" parent="rail/joints/@joint@22658" groups=["rail"]]
+
+[node name="@@22656" type="CollisionShape3D" parent="rail/joints/@joint@22658/@@22657"]
+shape = SubResource("BoxShape3D_w2h5o")
+
+[node name="rail2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.682, 2.5351, -75.2155)
+script = ExtResource("3_ifhow")
+
+[node name="start" type="Node3D" parent="rail2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.38598, 1.5829, 7.00423)
+
+[node name="end" type="Node3D" parent="rail2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.2903, -16.3334, -28.3488)
+
+[node name="rail" parent="rail2" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.817406, -0.22122, 0.531891, -1.25469e-08, 0.923324, 0.384021, -0.576061, -0.313901, 0.754731, 4.67456, -1.87924, 3.0546)
+
+[node name="rail2" parent="rail2" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.817406, -0.22122, 0.531891, -1.25469e-08, 0.923324, 0.384021, -0.576061, -0.313901, 0.754731, -0.604416, -5.70584, -4.43605)
+
+[node name="rail3" parent="rail2" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.817406, -0.22122, 0.531891, -1.25469e-08, 0.923324, 0.384021, -0.576061, -0.313901, 0.754731, -5.896, -9.50682, -11.9446)
+
+[node name="rail4" parent="rail2" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.817406, -0.22122, 0.531891, -1.25469e-08, 0.923324, 0.384021, -0.576061, -0.313901, 0.754731, -11.1835, -13.2653, -19.5034)
+
+[node name="rail5" parent="rail2" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.817406, -0.22122, 0.531891, -1.25469e-08, 0.923324, 0.384021, -0.576061, -0.313901, 0.754731, -16.5051, -17.0805, -26.9692)
+
+[node name="joints" type="Node3D" parent="rail2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.38598, 1.5829, 7.00423)
+
+[node name="joint" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.6763, -17.9163, -35.3531)
+
+[node name="@@30000" type="Area3D" parent="rail2/joints/joint" groups=["rail"]]
+
+[node name="@@29999" type="CollisionShape3D" parent="rail2/joints/joint/@@30000"]
+shape = SubResource("BoxShape3D_epumm")
+
+[node name="@joint@30003" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6192, -17.1488, -33.8386)
+
+[node name="@@30002" type="Area3D" parent="rail2/joints/@joint@30003" groups=["rail"]]
+
+[node name="@@30001" type="CollisionShape3D" parent="rail2/joints/@joint@30003/@@30002"]
+shape = SubResource("BoxShape3D_0ciif")
+
+[node name="@joint@30006" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5622, -16.3813, -32.3242)
+
+[node name="@@30005" type="Area3D" parent="rail2/joints/@joint@30006" groups=["rail"]]
+
+[node name="@@30004" type="CollisionShape3D" parent="rail2/joints/@joint@30006/@@30005"]
+shape = SubResource("BoxShape3D_ibtet")
+
+[node name="@joint@30009" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5051, -15.6139, -30.8097)
+
+[node name="@@30008" type="Area3D" parent="rail2/joints/@joint@30009" groups=["rail"]]
+
+[node name="@@30007" type="CollisionShape3D" parent="rail2/joints/@joint@30009/@@30008"]
+shape = SubResource("BoxShape3D_oswbg")
+
+[node name="@joint@30012" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.448, -14.8464, -29.2953)
+
+[node name="@@30011" type="Area3D" parent="rail2/joints/@joint@30012" groups=["rail"]]
+
+[node name="@@30010" type="CollisionShape3D" parent="rail2/joints/@joint@30012/@@30011"]
+shape = SubResource("BoxShape3D_3uvtm")
+
+[node name="@joint@30015" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.3909, -14.0789, -27.7809)
+
+[node name="@@30014" type="Area3D" parent="rail2/joints/@joint@30015" groups=["rail"]]
+
+[node name="@@30013" type="CollisionShape3D" parent="rail2/joints/@joint@30015/@@30014"]
+shape = SubResource("BoxShape3D_bxxlu")
+
+[node name="@joint@30018" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.3338, -13.3114, -26.2664)
+
+[node name="@@30017" type="Area3D" parent="rail2/joints/@joint@30018" groups=["rail"]]
+
+[node name="@@30016" type="CollisionShape3D" parent="rail2/joints/@joint@30018/@@30017"]
+shape = SubResource("BoxShape3D_i3skk")
+
+[node name="@joint@30021" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.2768, -12.5439, -24.752)
+
+[node name="@@30020" type="Area3D" parent="rail2/joints/@joint@30021" groups=["rail"]]
+
+[node name="@@30019" type="CollisionShape3D" parent="rail2/joints/@joint@30021/@@30020"]
+shape = SubResource("BoxShape3D_shths")
+
+[node name="@joint@30024" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.2197, -11.7764, -23.2375)
+
+[node name="@@30023" type="Area3D" parent="rail2/joints/@joint@30024" groups=["rail"]]
+
+[node name="@@30022" type="CollisionShape3D" parent="rail2/joints/@joint@30024/@@30023"]
+shape = SubResource("BoxShape3D_e3tdf")
+
+[node name="@joint@30027" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1626, -11.0089, -21.7231)
+
+[node name="@@30026" type="Area3D" parent="rail2/joints/@joint@30027" groups=["rail"]]
+
+[node name="@@30025" type="CollisionShape3D" parent="rail2/joints/@joint@30027/@@30026"]
+shape = SubResource("BoxShape3D_q48w2")
+
+[node name="@joint@30030" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1055, -10.2414, -20.2086)
+
+[node name="@@30029" type="Area3D" parent="rail2/joints/@joint@30030" groups=["rail"]]
+
+[node name="@@30028" type="CollisionShape3D" parent="rail2/joints/@joint@30030/@@30029"]
+shape = SubResource("BoxShape3D_e8nbl")
+
+[node name="@joint@30033" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0485, -9.4739, -18.6942)
+
+[node name="@@30032" type="Area3D" parent="rail2/joints/@joint@30033" groups=["rail"]]
+
+[node name="@@30031" type="CollisionShape3D" parent="rail2/joints/@joint@30033/@@30032"]
+shape = SubResource("BoxShape3D_0hvth")
+
+[node name="@joint@30036" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9914, -8.7064, -17.1797)
+
+[node name="@@30035" type="Area3D" parent="rail2/joints/@joint@30036" groups=["rail"]]
+
+[node name="@@30034" type="CollisionShape3D" parent="rail2/joints/@joint@30036/@@30035"]
+shape = SubResource("BoxShape3D_icyuw")
+
+[node name="@joint@30039" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9343, -7.93891, -15.6653)
+
+[node name="@@30038" type="Area3D" parent="rail2/joints/@joint@30039" groups=["rail"]]
+
+[node name="@@30037" type="CollisionShape3D" parent="rail2/joints/@joint@30039/@@30038"]
+shape = SubResource("BoxShape3D_r0i7b")
+
+[node name="@joint@30042" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.87724, -7.17141, -14.1509)
+
+[node name="@@30041" type="Area3D" parent="rail2/joints/@joint@30042" groups=["rail"]]
+
+[node name="@@30040" type="CollisionShape3D" parent="rail2/joints/@joint@30042/@@30041"]
+shape = SubResource("BoxShape3D_apvwb")
+
+[node name="@joint@30045" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.82016, -6.40392, -12.6364)
+
+[node name="@@30044" type="Area3D" parent="rail2/joints/@joint@30045" groups=["rail"]]
+
+[node name="@@30043" type="CollisionShape3D" parent="rail2/joints/@joint@30045/@@30044"]
+shape = SubResource("BoxShape3D_4axm3")
+
+[node name="@joint@30048" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.76309, -5.63642, -11.122)
+
+[node name="@@30047" type="Area3D" parent="rail2/joints/@joint@30048" groups=["rail"]]
+
+[node name="@@30046" type="CollisionShape3D" parent="rail2/joints/@joint@30048/@@30047"]
+shape = SubResource("BoxShape3D_ipa8c")
+
+[node name="@joint@30051" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.70601, -4.86893, -9.60752)
+
+[node name="@@30050" type="Area3D" parent="rail2/joints/@joint@30051" groups=["rail"]]
+
+[node name="@@30049" type="CollisionShape3D" parent="rail2/joints/@joint@30051/@@30050"]
+shape = SubResource("BoxShape3D_t1151")
+
+[node name="@joint@30054" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.64893, -4.10143, -8.09307)
+
+[node name="@@30053" type="Area3D" parent="rail2/joints/@joint@30054" groups=["rail"]]
+
+[node name="@@30052" type="CollisionShape3D" parent="rail2/joints/@joint@30054/@@30053"]
+shape = SubResource("BoxShape3D_cors4")
+
+[node name="@joint@30057" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.59186, -3.33394, -6.57863)
+
+[node name="@@30056" type="Area3D" parent="rail2/joints/@joint@30057" groups=["rail"]]
+
+[node name="@@30055" type="CollisionShape3D" parent="rail2/joints/@joint@30057/@@30056"]
+shape = SubResource("BoxShape3D_f50to")
+
+[node name="@joint@30060" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.53478, -2.56644, -5.06419)
+
+[node name="@@30059" type="Area3D" parent="rail2/joints/@joint@30060" groups=["rail"]]
+
+[node name="@@30058" type="CollisionShape3D" parent="rail2/joints/@joint@30060/@@30059"]
+shape = SubResource("BoxShape3D_e8icf")
+
+[node name="@joint@30063" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.47771, -1.79895, -3.54974)
+
+[node name="@@30062" type="Area3D" parent="rail2/joints/@joint@30063" groups=["rail"]]
+
+[node name="@@30061" type="CollisionShape3D" parent="rail2/joints/@joint@30063/@@30062"]
+shape = SubResource("BoxShape3D_3kjaw")
+
+[node name="@joint@30066" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42063, -1.03145, -2.0353)
+
+[node name="@@30065" type="Area3D" parent="rail2/joints/@joint@30066" groups=["rail"]]
+
+[node name="@@30064" type="CollisionShape3D" parent="rail2/joints/@joint@30066/@@30065"]
+shape = SubResource("BoxShape3D_b4p8y")
+
+[node name="@joint@30069" type="Node3D" parent="rail2/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.363553, -0.26396, -0.520853)
+
+[node name="@@30068" type="Area3D" parent="rail2/joints/@joint@30069" groups=["rail"]]
+
+[node name="@@30067" type="CollisionShape3D" parent="rail2/joints/@joint@30069/@@30068"]
+shape = SubResource("BoxShape3D_ovvsx")
+
+[node name="BallEnemy" parent="." instance=ExtResource("4_1yqyx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.4937, 4.00612, -45.4002)
+
+[node name="rail3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -121.126, 2.5351, -135.608)
+script = ExtResource("3_ifhow")
+
+[node name="start" type="Node3D" parent="rail3"]
+transform = Transform3D(0.942523, 0.0783107, -0.324834, -0.140973, 0.974587, -0.174088, 0.302946, 0.209875, 0.929611, 1.99713, -12.0146, 11.5959)
+
+[node name="end" type="Node3D" parent="rail3"]
+transform = Transform3D(0.942523, 0.0783107, -0.324834, -0.140973, 0.974587, -0.174088, 0.302946, 0.209875, 0.929611, -11.18, -19.8424, -32.5045)
+
+[node name="rail" parent="rail3" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.957549, -0.0342328, 0.286231, -0.0149469, 0.985692, 0.16789, -0.287883, -0.165041, 0.943337, 0.4534, -14.3189, 6.37624)
+
+[node name="rail2" parent="rail3" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.957549, -0.0342328, 0.286231, -0.0149469, 0.985692, 0.16789, -0.287883, -0.165041, 0.943337, -2.3886, -16, -2.9895)
+
+[node name="rail3" parent="rail3" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.957549, -0.0342328, 0.286231, -0.0149469, 0.985692, 0.16789, -0.287883, -0.165041, 0.943337, -5.23469, -17.6513, -12.3703)
+
+[node name="rail4" parent="rail3" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.957549, -0.0342329, 0.286231, -0.0149469, 0.985692, 0.16789, -0.287883, -0.165041, 0.943337, -8.05723, -19.2531, -21.7877)
+
+[node name="rail5" parent="rail3" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.957549, -0.0342329, 0.286231, -0.0149469, 0.985692, 0.16789, -0.287883, -0.165041, 0.943337, -10.9466, -20.9213, -31.1409)
+
+[node name="joints" type="Node3D" parent="rail3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.99713, -12.0146, 11.5959)
+
+[node name="joint" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1772, -7.82781, -44.1004)
+
+[node name="@@41251" type="Area3D" parent="rail3/joints/joint" groups=["rail"]]
+
+[node name="@@41250" type="CollisionShape3D" parent="rail3/joints/joint/@@41251"]
+shape = SubResource("BoxShape3D_q7a8x")
+
+[node name="@joint@41254" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6127, -7.49249, -42.2112)
+
+[node name="@@41253" type="Area3D" parent="rail3/joints/@joint@41254" groups=["rail"]]
+
+[node name="@@41252" type="CollisionShape3D" parent="rail3/joints/@joint@41254/@@41253"]
+shape = SubResource("BoxShape3D_jagfs")
+
+[node name="@joint@41257" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0482, -7.15716, -40.3221)
+
+[node name="@@41256" type="Area3D" parent="rail3/joints/@joint@41257" groups=["rail"]]
+
+[node name="@@41255" type="CollisionShape3D" parent="rail3/joints/@joint@41257/@@41256"]
+shape = SubResource("BoxShape3D_jcyy5")
+
+[node name="@joint@41260" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4837, -6.82183, -38.4329)
+
+[node name="@@41259" type="Area3D" parent="rail3/joints/@joint@41260" groups=["rail"]]
+
+[node name="@@41258" type="CollisionShape3D" parent="rail3/joints/@joint@41260/@@41259"]
+shape = SubResource("BoxShape3D_vnosu")
+
+[node name="@joint@41263" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9192, -6.48651, -36.5437)
+
+[node name="@@41262" type="Area3D" parent="rail3/joints/@joint@41263" groups=["rail"]]
+
+[node name="@@41261" type="CollisionShape3D" parent="rail3/joints/@joint@41263/@@41262"]
+shape = SubResource("BoxShape3D_ekh5e")
+
+[node name="@joint@41266" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3548, -6.15118, -34.6546)
+
+[node name="@@41265" type="Area3D" parent="rail3/joints/@joint@41266" groups=["rail"]]
+
+[node name="@@41264" type="CollisionShape3D" parent="rail3/joints/@joint@41266/@@41265"]
+shape = SubResource("BoxShape3D_gxaka")
+
+[node name="@joint@41269" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.79029, -5.81586, -32.7654)
+
+[node name="@@41268" type="Area3D" parent="rail3/joints/@joint@41269" groups=["rail"]]
+
+[node name="@@41267" type="CollisionShape3D" parent="rail3/joints/@joint@41269/@@41268"]
+shape = SubResource("BoxShape3D_vbhu1")
+
+[node name="@joint@41272" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.22581, -5.48053, -30.8763)
+
+[node name="@@41271" type="Area3D" parent="rail3/joints/@joint@41272" groups=["rail"]]
+
+[node name="@@41270" type="CollisionShape3D" parent="rail3/joints/@joint@41272/@@41271"]
+shape = SubResource("BoxShape3D_cgohr")
+
+[node name="@joint@41275" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.66133, -5.14521, -28.9871)
+
+[node name="@@41274" type="Area3D" parent="rail3/joints/@joint@41275" groups=["rail"]]
+
+[node name="@@41273" type="CollisionShape3D" parent="rail3/joints/@joint@41275/@@41274"]
+shape = SubResource("BoxShape3D_o71vg")
+
+[node name="@joint@41278" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.09685, -4.80988, -27.0979)
+
+[node name="@@41277" type="Area3D" parent="rail3/joints/@joint@41278" groups=["rail"]]
+
+[node name="@@41276" type="CollisionShape3D" parent="rail3/joints/@joint@41278/@@41277"]
+shape = SubResource("BoxShape3D_lh3bt")
+
+[node name="@joint@41281" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.53237, -4.47456, -25.2088)
+
+[node name="@@41280" type="Area3D" parent="rail3/joints/@joint@41281" groups=["rail"]]
+
+[node name="@@41279" type="CollisionShape3D" parent="rail3/joints/@joint@41281/@@41280"]
+shape = SubResource("BoxShape3D_f3ed5")
+
+[node name="@joint@41284" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.96789, -4.13923, -23.3196)
+
+[node name="@@41283" type="Area3D" parent="rail3/joints/@joint@41284" groups=["rail"]]
+
+[node name="@@41282" type="CollisionShape3D" parent="rail3/joints/@joint@41284/@@41283"]
+shape = SubResource("BoxShape3D_mya0l")
+
+[node name="@joint@41287" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.40341, -3.80391, -21.4305)
+
+[node name="@@41286" type="Area3D" parent="rail3/joints/@joint@41287" groups=["rail"]]
+
+[node name="@@41285" type="CollisionShape3D" parent="rail3/joints/@joint@41287/@@41286"]
+shape = SubResource("BoxShape3D_bohp3")
+
+[node name="@joint@41290" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.83893, -3.46858, -19.5413)
+
+[node name="@@41289" type="Area3D" parent="rail3/joints/@joint@41290" groups=["rail"]]
+
+[node name="@@41288" type="CollisionShape3D" parent="rail3/joints/@joint@41290/@@41289"]
+shape = SubResource("BoxShape3D_3hdnh")
+
+[node name="@joint@41293" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.27445, -3.13325, -17.6522)
+
+[node name="@@41292" type="Area3D" parent="rail3/joints/@joint@41293" groups=["rail"]]
+
+[node name="@@41291" type="CollisionShape3D" parent="rail3/joints/@joint@41293/@@41292"]
+shape = SubResource("BoxShape3D_5voph")
+
+[node name="@joint@41296" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.70997, -2.79793, -15.763)
+
+[node name="@@41295" type="Area3D" parent="rail3/joints/@joint@41296" groups=["rail"]]
+
+[node name="@@41294" type="CollisionShape3D" parent="rail3/joints/@joint@41296/@@41295"]
+shape = SubResource("BoxShape3D_y1wkm")
+
+[node name="@joint@41299" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.14549, -2.4626, -13.8738)
+
+[node name="@@41298" type="Area3D" parent="rail3/joints/@joint@41299" groups=["rail"]]
+
+[node name="@@41297" type="CollisionShape3D" parent="rail3/joints/@joint@41299/@@41298"]
+shape = SubResource("BoxShape3D_gvu5y")
+
+[node name="@joint@41302" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58101, -2.12728, -11.9847)
+
+[node name="@@41301" type="Area3D" parent="rail3/joints/@joint@41302" groups=["rail"]]
+
+[node name="@@41300" type="CollisionShape3D" parent="rail3/joints/@joint@41302/@@41301"]
+shape = SubResource("BoxShape3D_x2452")
+
+[node name="@joint@41305" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.01653, -1.79195, -10.0955)
+
+[node name="@@41304" type="Area3D" parent="rail3/joints/@joint@41305" groups=["rail"]]
+
+[node name="@@41303" type="CollisionShape3D" parent="rail3/joints/@joint@41305/@@41304"]
+shape = SubResource("BoxShape3D_okflh")
+
+[node name="@joint@41308" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.45206, -1.45663, -8.20636)
+
+[node name="@@41307" type="Area3D" parent="rail3/joints/@joint@41308" groups=["rail"]]
+
+[node name="@@41306" type="CollisionShape3D" parent="rail3/joints/@joint@41308/@@41307"]
+shape = SubResource("BoxShape3D_x1ook")
+
+[node name="@joint@41311" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.88758, -1.1213, -6.3172)
+
+[node name="@@41310" type="Area3D" parent="rail3/joints/@joint@41311" groups=["rail"]]
+
+[node name="@@41309" type="CollisionShape3D" parent="rail3/joints/@joint@41311/@@41310"]
+shape = SubResource("BoxShape3D_6sm1a")
+
+[node name="@joint@41314" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3231, -0.785977, -4.42804)
+
+[node name="@@41313" type="Area3D" parent="rail3/joints/@joint@41314" groups=["rail"]]
+
+[node name="@@41312" type="CollisionShape3D" parent="rail3/joints/@joint@41314/@@41313"]
+shape = SubResource("BoxShape3D_gn87b")
+
+[node name="@joint@41317" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.758617, -0.450652, -2.53888)
+
+[node name="@@41316" type="Area3D" parent="rail3/joints/@joint@41317" groups=["rail"]]
+
+[node name="@@41315" type="CollisionShape3D" parent="rail3/joints/@joint@41317/@@41316"]
+shape = SubResource("BoxShape3D_du8c2")
+
+[node name="@joint@41320" type="Node3D" parent="rail3/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.194138, -0.115326, -0.649726)
+
+[node name="@@41319" type="Area3D" parent="rail3/joints/@joint@41320" groups=["rail"]]
+
+[node name="@@41318" type="CollisionShape3D" parent="rail3/joints/@joint@41320/@@41319"]
+shape = SubResource("BoxShape3D_eqj31")
+
+[node name="rail4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.172, 2.5351, -234.701)
+script = ExtResource("3_ifhow")
+
+[node name="start" type="Node3D" parent="rail4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4773, -17.5998, -7.32303)
+
+[node name="end" type="Node3D" parent="rail4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2972, -24.1803, -25.6588)
+
+[node name="rail" parent="rail4" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.465642, 0.155452, -0.871212, -0.0149469, 0.985692, 0.16789, 0.884846, -0.0651549, 0.461304, -7.52479, -19.9849, -9.91898)
+
+[node name="rail2" parent="rail4" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.465642, 0.155452, -0.871212, -0.0149469, 0.985692, 0.16789, 0.884847, -0.0651549, 0.461303, 1.12484, -21.666, -14.4991)
+
+[node name="rail3" parent="rail4" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.465642, 0.155452, -0.871212, -0.0149469, 0.985692, 0.16789, 0.884847, -0.0651549, 0.461303, 9.78843, -23.3173, -19.0862)
+
+[node name="rail4" parent="rail4" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.465643, 0.155452, -0.871212, -0.0149469, 0.985692, 0.16789, 0.884847, -0.065155, 0.461303, 18.4925, -24.919, -23.6572)
+
+[node name="joints" type="Node3D" parent="rail4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4773, -17.5998, -7.32303)
+
+[node name="joint" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.7745, -6.58056, -18.3358)
+
+[node name="@@182667" type="Area3D" parent="rail4/joints/joint" groups=["rail"]]
+
+[node name="@@182666" type="CollisionShape3D" parent="rail4/joints/joint/@@182667"]
+shape = SubResource("BoxShape3D_kp5vn")
+
+[node name="@joint@182670" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.0297, -6.25038, -17.4157)
+
+[node name="@@182669" type="Area3D" parent="rail4/joints/@joint@182670" groups=["rail"]]
+
+[node name="@@182668" type="CollisionShape3D" parent="rail4/joints/@joint@182670/@@182669"]
+shape = SubResource("BoxShape3D_lxs1p")
+
+[node name="@joint@182673" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.2848, -5.92019, -16.4957)
+
+[node name="@@182672" type="Area3D" parent="rail4/joints/@joint@182673" groups=["rail"]]
+
+[node name="@@182671" type="CollisionShape3D" parent="rail4/joints/@joint@182673/@@182672"]
+shape = SubResource("BoxShape3D_bilon")
+
+[node name="@joint@182676" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.5399, -5.59, -15.5757)
+
+[node name="@@182675" type="Area3D" parent="rail4/joints/@joint@182676" groups=["rail"]]
+
+[node name="@@182674" type="CollisionShape3D" parent="rail4/joints/@joint@182676/@@182675"]
+shape = SubResource("BoxShape3D_qgn6j")
+
+[node name="@joint@182679" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7951, -5.25981, -14.6557)
+
+[node name="@@182678" type="Area3D" parent="rail4/joints/@joint@182679" groups=["rail"]]
+
+[node name="@@182677" type="CollisionShape3D" parent="rail4/joints/@joint@182679/@@182678"]
+shape = SubResource("BoxShape3D_itb1d")
+
+[node name="@joint@182682" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.0502, -4.92962, -13.7356)
+
+[node name="@@182681" type="Area3D" parent="rail4/joints/@joint@182682" groups=["rail"]]
+
+[node name="@@182680" type="CollisionShape3D" parent="rail4/joints/@joint@182682/@@182681"]
+shape = SubResource("BoxShape3D_eh6ri")
+
+[node name="@joint@182685" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.3054, -4.59943, -12.8156)
+
+[node name="@@182684" type="Area3D" parent="rail4/joints/@joint@182685" groups=["rail"]]
+
+[node name="@@182683" type="CollisionShape3D" parent="rail4/joints/@joint@182685/@@182684"]
+shape = SubResource("BoxShape3D_3odyt")
+
+[node name="@joint@182688" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5605, -4.26924, -11.8956)
+
+[node name="@@182687" type="Area3D" parent="rail4/joints/@joint@182688" groups=["rail"]]
+
+[node name="@@182686" type="CollisionShape3D" parent="rail4/joints/@joint@182688/@@182687"]
+shape = SubResource("BoxShape3D_ady0v")
+
+[node name="@joint@182691" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8156, -3.93905, -10.9756)
+
+[node name="@@182690" type="Area3D" parent="rail4/joints/@joint@182691" groups=["rail"]]
+
+[node name="@@182689" type="CollisionShape3D" parent="rail4/joints/@joint@182691/@@182690"]
+shape = SubResource("BoxShape3D_66jvy")
+
+[node name="@joint@182694" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0708, -3.60886, -10.0556)
+
+[node name="@@182693" type="Area3D" parent="rail4/joints/@joint@182694" groups=["rail"]]
+
+[node name="@@182692" type="CollisionShape3D" parent="rail4/joints/@joint@182694/@@182693"]
+shape = SubResource("BoxShape3D_rehco")
+
+[node name="@joint@182697" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3259, -3.27868, -9.13554)
+
+[node name="@@182696" type="Area3D" parent="rail4/joints/@joint@182697" groups=["rail"]]
+
+[node name="@@182695" type="CollisionShape3D" parent="rail4/joints/@joint@182697/@@182696"]
+shape = SubResource("BoxShape3D_h3riv")
+
+[node name="@joint@182700" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5811, -2.94849, -8.21551)
+
+[node name="@@182699" type="Area3D" parent="rail4/joints/@joint@182700" groups=["rail"]]
+
+[node name="@@182698" type="CollisionShape3D" parent="rail4/joints/@joint@182700/@@182699"]
+shape = SubResource("BoxShape3D_6tddw")
+
+[node name="@joint@182703" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8362, -2.6183, -7.29549)
+
+[node name="@@182702" type="Area3D" parent="rail4/joints/@joint@182703" groups=["rail"]]
+
+[node name="@@182701" type="CollisionShape3D" parent="rail4/joints/@joint@182703/@@182702"]
+shape = SubResource("BoxShape3D_0iql3")
+
+[node name="@joint@182706" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0913, -2.28811, -6.37547)
+
+[node name="@@182705" type="Area3D" parent="rail4/joints/@joint@182706" groups=["rail"]]
+
+[node name="@@182704" type="CollisionShape3D" parent="rail4/joints/@joint@182706/@@182705"]
+shape = SubResource("BoxShape3D_0syxn")
+
+[node name="@joint@182709" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3465, -1.95792, -5.45545)
+
+[node name="@@182708" type="Area3D" parent="rail4/joints/@joint@182709" groups=["rail"]]
+
+[node name="@@182707" type="CollisionShape3D" parent="rail4/joints/@joint@182709/@@182708"]
+shape = SubResource("BoxShape3D_4p1q6")
+
+[node name="@joint@182712" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.60163, -1.62773, -4.53543)
+
+[node name="@@182711" type="Area3D" parent="rail4/joints/@joint@182712" groups=["rail"]]
+
+[node name="@@182710" type="CollisionShape3D" parent="rail4/joints/@joint@182712/@@182711"]
+shape = SubResource("BoxShape3D_c2f4f")
+
+[node name="@joint@182715" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.85677, -1.29754, -3.61541)
+
+[node name="@@182714" type="Area3D" parent="rail4/joints/@joint@182715" groups=["rail"]]
+
+[node name="@@182713" type="CollisionShape3D" parent="rail4/joints/@joint@182715/@@182714"]
+shape = SubResource("BoxShape3D_ndkgx")
+
+[node name="@joint@182718" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.11191, -0.967353, -2.69538)
+
+[node name="@@182717" type="Area3D" parent="rail4/joints/@joint@182718" groups=["rail"]]
+
+[node name="@@182716" type="CollisionShape3D" parent="rail4/joints/@joint@182718/@@182717"]
+shape = SubResource("BoxShape3D_ipdsc")
+
+[node name="@joint@182721" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.36705, -0.637164, -1.77536)
+
+[node name="@@182720" type="Area3D" parent="rail4/joints/@joint@182721" groups=["rail"]]
+
+[node name="@@182719" type="CollisionShape3D" parent="rail4/joints/@joint@182721/@@182720"]
+shape = SubResource("BoxShape3D_0u3ms")
+
+[node name="@joint@182724" type="Node3D" parent="rail4/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.62219, -0.306975, -0.85534)
+
+[node name="@@182723" type="Area3D" parent="rail4/joints/@joint@182724" groups=["rail"]]
+
+[node name="@@182722" type="CollisionShape3D" parent="rail4/joints/@joint@182724/@@182723"]
+shape = SubResource("BoxShape3D_msodg")
+
+[node name="Control" parent="." instance=ExtResource("7_2oehm")]
+unique_name_in_owner = true
+
+[node name="rail5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.2463, 2.5351, -214.858)
+script = ExtResource("3_ifhow")
+
+[node name="start" type="Node3D" parent="rail5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9862, -5.85811, 22.4419)
+
+[node name="end" type="Node3D" parent="rail5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4994, -19.1815, -14.7937)
+
+[node name="rail" parent="rail5" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.999268, -0.00642456, 0.0377233, -0.006564, 0.942417, 0.334377, -0.0376994, -0.33438, 0.941684, -12.2244, -9.15277, 17.5611)
+
+[node name="rail2" parent="rail5" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.999268, -0.0064246, 0.0377233, -0.00656399, 0.942416, 0.334377, -0.0376993, -0.33438, 0.941684, -12.5991, -12.4866, 8.21419)
+
+[node name="rail3" parent="rail5" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.999268, -0.0064246, 0.0377233, -0.00656399, 0.942416, 0.334377, -0.0376993, -0.33438, 0.941684, -12.974, -15.7937, -1.15324)
+
+[node name="rail4" parent="rail5" instance=ExtResource("4_8d6r1")]
+transform = Transform3D(0.999268, -0.00642458, 0.0377234, -0.00656401, 0.942417, 0.334377, -0.0376994, -0.33438, 0.941684, -13.3168, -19.0571, -10.5582)
+
+[node name="joints" type="Node3D" parent="rail5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9862, -5.85811, 22.4419)
+
+[node name="joint" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51321, -13.3234, -37.2356)
+
+[node name="@@202318" type="Area3D" parent="rail5/joints/joint" groups=["rail"]]
+
+[node name="@@202317" type="CollisionShape3D" parent="rail5/joints/joint/@@202318"]
+shape = SubResource("BoxShape3D_lwpco")
+
+[node name="@joint@202321" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.43674, -12.6501, -35.3539)
+
+[node name="@@202320" type="Area3D" parent="rail5/joints/@joint@202321" groups=["rail"]]
+
+[node name="@@202319" type="CollisionShape3D" parent="rail5/joints/@joint@202321/@@202320"]
+shape = SubResource("BoxShape3D_mkl6c")
+
+[node name="@joint@202324" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36027, -11.9768, -33.4722)
+
+[node name="@@202323" type="Area3D" parent="rail5/joints/@joint@202324" groups=["rail"]]
+
+[node name="@@202322" type="CollisionShape3D" parent="rail5/joints/@joint@202324/@@202323"]
+shape = SubResource("BoxShape3D_hx4nb")
+
+[node name="@joint@202327" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2838, -11.3035, -31.5904)
+
+[node name="@@202326" type="Area3D" parent="rail5/joints/@joint@202327" groups=["rail"]]
+
+[node name="@@202325" type="CollisionShape3D" parent="rail5/joints/@joint@202327/@@202326"]
+shape = SubResource("BoxShape3D_raq1d")
+
+[node name="@joint@202330" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.20733, -10.6302, -29.7087)
+
+[node name="@@202329" type="Area3D" parent="rail5/joints/@joint@202330" groups=["rail"]]
+
+[node name="@@202328" type="CollisionShape3D" parent="rail5/joints/@joint@202330/@@202329"]
+shape = SubResource("BoxShape3D_kf1am")
+
+[node name="@joint@202333" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.13086, -9.95687, -27.827)
+
+[node name="@@202332" type="Area3D" parent="rail5/joints/@joint@202333" groups=["rail"]]
+
+[node name="@@202331" type="CollisionShape3D" parent="rail5/joints/@joint@202333/@@202332"]
+shape = SubResource("BoxShape3D_ooujy")
+
+[node name="@joint@202336" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05439, -9.28357, -25.9453)
+
+[node name="@@202335" type="Area3D" parent="rail5/joints/@joint@202336" groups=["rail"]]
+
+[node name="@@202334" type="CollisionShape3D" parent="rail5/joints/@joint@202336/@@202335"]
+shape = SubResource("BoxShape3D_r35m7")
+
+[node name="@joint@202339" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.97792, -8.61027, -24.0636)
+
+[node name="@@202338" type="Area3D" parent="rail5/joints/@joint@202339" groups=["rail"]]
+
+[node name="@@202337" type="CollisionShape3D" parent="rail5/joints/@joint@202339/@@202338"]
+shape = SubResource("BoxShape3D_83a28")
+
+[node name="@joint@202342" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.901449, -7.93697, -22.1819)
+
+[node name="@@202341" type="Area3D" parent="rail5/joints/@joint@202342" groups=["rail"]]
+
+[node name="@@202340" type="CollisionShape3D" parent="rail5/joints/@joint@202342/@@202341"]
+shape = SubResource("BoxShape3D_blwdj")
+
+[node name="@joint@202345" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.824979, -7.26368, -20.3002)
+
+[node name="@@202344" type="Area3D" parent="rail5/joints/@joint@202345" groups=["rail"]]
+
+[node name="@@202343" type="CollisionShape3D" parent="rail5/joints/@joint@202345/@@202344"]
+shape = SubResource("BoxShape3D_dycw7")
+
+[node name="@joint@202348" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.748508, -6.59038, -18.4185)
+
+[node name="@@202347" type="Area3D" parent="rail5/joints/@joint@202348" groups=["rail"]]
+
+[node name="@@202346" type="CollisionShape3D" parent="rail5/joints/@joint@202348/@@202347"]
+shape = SubResource("BoxShape3D_eln4o")
+
+[node name="@joint@202351" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.672038, -5.91708, -16.5368)
+
+[node name="@@202350" type="Area3D" parent="rail5/joints/@joint@202351" groups=["rail"]]
+
+[node name="@@202349" type="CollisionShape3D" parent="rail5/joints/@joint@202351/@@202350"]
+shape = SubResource("BoxShape3D_o4iyj")
+
+[node name="@joint@202354" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.595567, -5.24378, -14.6551)
+
+[node name="@@202353" type="Area3D" parent="rail5/joints/@joint@202354" groups=["rail"]]
+
+[node name="@@202352" type="CollisionShape3D" parent="rail5/joints/@joint@202354/@@202353"]
+shape = SubResource("BoxShape3D_x4m0x")
+
+[node name="@joint@202357" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.519096, -4.57048, -12.7734)
+
+[node name="@@202356" type="Area3D" parent="rail5/joints/@joint@202357" groups=["rail"]]
+
+[node name="@@202355" type="CollisionShape3D" parent="rail5/joints/@joint@202357/@@202356"]
+shape = SubResource("BoxShape3D_owchx")
+
+[node name="@joint@202360" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.442626, -3.89718, -10.8917)
+
+[node name="@@202359" type="Area3D" parent="rail5/joints/@joint@202360" groups=["rail"]]
+
+[node name="@@202358" type="CollisionShape3D" parent="rail5/joints/@joint@202360/@@202359"]
+shape = SubResource("BoxShape3D_mi3bs")
+
+[node name="@joint@202363" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.366155, -3.22388, -9.00996)
+
+[node name="@@202362" type="Area3D" parent="rail5/joints/@joint@202363" groups=["rail"]]
+
+[node name="@@202361" type="CollisionShape3D" parent="rail5/joints/@joint@202363/@@202362"]
+shape = SubResource("BoxShape3D_wguec")
+
+[node name="@joint@202366" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.289685, -2.55058, -7.12825)
+
+[node name="@@202365" type="Area3D" parent="rail5/joints/@joint@202366" groups=["rail"]]
+
+[node name="@@202364" type="CollisionShape3D" parent="rail5/joints/@joint@202366/@@202365"]
+shape = SubResource("BoxShape3D_dlrdx")
+
+[node name="@joint@202369" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.213214, -1.87728, -5.24655)
+
+[node name="@@202368" type="Area3D" parent="rail5/joints/@joint@202369" groups=["rail"]]
+
+[node name="@@202367" type="CollisionShape3D" parent="rail5/joints/@joint@202369/@@202368"]
+shape = SubResource("BoxShape3D_2p58n")
+
+[node name="@joint@202372" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.136744, -1.20398, -3.36484)
+
+[node name="@@202371" type="Area3D" parent="rail5/joints/@joint@202372" groups=["rail"]]
+
+[node name="@@202370" type="CollisionShape3D" parent="rail5/joints/@joint@202372/@@202371"]
+shape = SubResource("BoxShape3D_x2wjd")
+
+[node name="@joint@202375" type="Node3D" parent="rail5/joints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060273, -0.530684, -1.48313)
+
+[node name="@@202374" type="Area3D" parent="rail5/joints/@joint@202375" groups=["rail"]]
+
+[node name="@@202373" type="CollisionShape3D" parent="rail5/joints/@joint@202375/@@202374"]
+shape = SubResource("BoxShape3D_17ot5")
+
+[connection signal="body_entered" from="rail/joints/joint/@@22604" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22607/@@22606" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22610/@@22609" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22613/@@22612" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22616/@@22615" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22619/@@22618" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22622/@@22621" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22625/@@22624" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22628/@@22627" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22631/@@22630" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22634/@@22633" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22637/@@22636" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22640/@@22639" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22643/@@22642" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22646/@@22645" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22649/@@22648" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22652/@@22651" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22655/@@22654" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail/joints/@joint@22658/@@22657" to="rail" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/joint/@@30000" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30003/@@30002" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30006/@@30005" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30009/@@30008" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30012/@@30011" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30015/@@30014" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30018/@@30017" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30021/@@30020" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30024/@@30023" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30027/@@30026" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30030/@@30029" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30033/@@30032" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30036/@@30035" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30039/@@30038" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30042/@@30041" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30045/@@30044" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30048/@@30047" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30051/@@30050" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30054/@@30053" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30057/@@30056" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30060/@@30059" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30063/@@30062" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30066/@@30065" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail2/joints/@joint@30069/@@30068" to="rail2" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/joint/@@41251" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41254/@@41253" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41257/@@41256" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41260/@@41259" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41263/@@41262" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41266/@@41265" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41269/@@41268" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41272/@@41271" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41275/@@41274" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41278/@@41277" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41281/@@41280" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41284/@@41283" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41287/@@41286" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41290/@@41289" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41293/@@41292" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41296/@@41295" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41299/@@41298" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41302/@@41301" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41305/@@41304" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41308/@@41307" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41311/@@41310" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41314/@@41313" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41317/@@41316" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail3/joints/@joint@41320/@@41319" to="rail3" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/joint/@@182667" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182670/@@182669" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182673/@@182672" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182676/@@182675" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182679/@@182678" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182682/@@182681" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182685/@@182684" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182688/@@182687" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182691/@@182690" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182694/@@182693" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182697/@@182696" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182700/@@182699" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182703/@@182702" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182706/@@182705" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182709/@@182708" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182712/@@182711" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182715/@@182714" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182718/@@182717" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182721/@@182720" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail4/joints/@joint@182724/@@182723" to="rail4" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/joint/@@202318" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202321/@@202320" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202324/@@202323" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202327/@@202326" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202330/@@202329" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202333/@@202332" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202336/@@202335" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202339/@@202338" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202342/@@202341" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202345/@@202344" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202348/@@202347" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202351/@@202350" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202354/@@202353" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202357/@@202356" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202360/@@202359" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202363/@@202362" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202366/@@202365" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202369/@@202368" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202372/@@202371" to="rail5" method="_player_entered_rail"]
+[connection signal="body_entered" from="rail5/joints/@joint@202375/@@202374" to="rail5" method="_player_entered_rail"]
