@@ -29,7 +29,6 @@ func marker_spawn():
 	get_tree().current_scene.get_node("Control/heat").value += 1
 	
 	var rand_index:int = randi() % MarkerSpawns.markers.size()
-	print(rand_index)
 	MarkerSpawns.markers[rand_index].enabled = true
 	MarkerSpawns.markers[rand_index].get_node("marker").show()
 	MarkerSpawns.currentMarker = MarkerSpawns.markers[rand_index]
@@ -41,8 +40,11 @@ func marker_spawn():
 	get_node("/root").add_child(instance)
 	instance.global_position = enemy_spawn_pos
 	MarkerSpawns.deliveries += 1
+
 	get_tree().current_scene.get_node("Control/deliveries_done/count").text = "" + str(MarkerSpawns.deliveries)
-	instance.max_speed = 5 + (MarkerSpawns.deliveries * 2.5)
+	instance.max_speed = 5 + (MarkerSpawns.deliveries * 1)
+	instance.add_to_group("enemy")
+	
 	
 
 	pass

@@ -20,3 +20,9 @@ func _process(delta):
 	velocity = -transform.basis.z * speed
 	move_and_slide()
 	pass
+		
+
+func _on_area_3d_body_entered(body):
+	if(body.is_in_group("player")):
+		body.die()
+	pass # Replace with function body.

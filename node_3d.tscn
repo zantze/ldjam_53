@@ -1,21 +1,20 @@
-[gd_scene load_steps=118 format=3 uid="uid://cqfnxm4lnk6lx"]
+[gd_scene load_steps=117 format=3 uid="uid://cqfnxm4lnk6lx"]
 
 [ext_resource type="AudioStream" uid="uid://42nqaxawrmol" path="res://sounds/music.mp3" id="2_eaudj"]
 [ext_resource type="PackedScene" uid="uid://n3gero6og1wi" path="res://Player.tscn" id="2_txidw"]
 [ext_resource type="Script" path="res://rail.gd" id="3_ifhow"]
 [ext_resource type="PackedScene" uid="uid://drp2dxt0cvarp" path="res://city_with_entitys.tscn" id="3_ob0ys"]
-[ext_resource type="PackedScene" uid="uid://i0s3unmtqa72" path="res://ball_enemy.tscn" id="4_1yqyx"]
 [ext_resource type="PackedScene" uid="uid://xpooxijk3vx7" path="res://models/rail.glb" id="4_8d6r1"]
 [ext_resource type="PackedScene" uid="uid://cxd80embg3m2f" path="res://control.tscn" id="7_2oehm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l6sgo"]
 
-[sub_resource type="Sky" id="Sky_quw46"]
+[sub_resource type="Sky" id="Sky_25rbf"]
 sky_material = SubResource("ProceduralSkyMaterial_l6sgo")
 
 [sub_resource type="Environment" id="Environment_14o6f"]
 background_mode = 2
-sky = SubResource("Sky_quw46")
+sky = SubResource("Sky_25rbf")
 fog_enabled = true
 fog_light_color = Color(0.0392157, 0.0509804, 0.0745098, 1)
 fog_light_energy = 3.19
@@ -251,7 +250,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.7303, 4.06845, -63.6396)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource("2_eaudj")
-volume_db = -9.37
+volume_db = -4.685
 autoplay = true
 
 [node name="Node3D2" parent="." instance=ExtResource("3_ob0ys")]
@@ -652,9 +651,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.363553, -0.26396, -0.52085
 
 [node name="@@30067" type="CollisionShape3D" parent="rail2/joints/@joint@30069/@@30068"]
 shape = SubResource("BoxShape3D_ovvsx")
-
-[node name="BallEnemy" parent="." instance=ExtResource("4_1yqyx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.4937, 4.00612, -45.4002)
 
 [node name="rail3" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -121.126, 2.5351, -135.608)

@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 var turnPoints = 3
 
+var is_dead = false
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
@@ -46,6 +47,9 @@ func _ready():
 	MarkerSpawns.player = self
 
 func _physics_process(delta):
+	if (is_dead):
+		return
+	
 	jump_cooldown -= delta
 	# Add the gravity.
 	if (grinding):
@@ -227,7 +231,6 @@ func grind():
 	
 func play_footstep():
 	var rand = randi() % 4
-	print(rand)
 	if rand == 0:
 		$sounds/step1.play()
 	if rand == 1:
@@ -238,3 +241,16 @@ func play_footstep():
 		$sounds/step4.play()
 	pass
 	
+func die():
+	$sounds/electric.play()
+	$Timer.start()
+	is_dead = true
+	
+func _finish_death():
+	#var simultaneous_scene = preload("res://ending.tscn").instantiate()
+	get_tree().change_scene_to_file( "res://ending.tscn")
+	pass
+
+func _on_timer_timeout():
+	_finish_death()
+	pass # Replace with function body.

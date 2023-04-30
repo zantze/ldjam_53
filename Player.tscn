@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://n3gero6og1wi"]
+[gd_scene load_steps=15 format=3 uid="uid://n3gero6og1wi"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_1xva8"]
 [ext_resource type="PackedScene" uid="uid://bqk1qy0ep27mk" path="res://models/arrow.glb" id="2_oojn7"]
@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://bead85vop2ra6" path="res://sounds/step2.mp3" id="8_kavsr"]
 [ext_resource type="AudioStream" uid="uid://k1vkwacdu371" path="res://sounds/step4..mp3" id="8_x16qo"]
 [ext_resource type="AudioStream" uid="uid://75axftlqaakc" path="res://sounds/step3..mp3" id="9_xa3e3"]
+[ext_resource type="AudioStream" uid="uid://8fnk44h8nit0" path="res://sounds/Electric.mp3" id="11_p4s8d"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lfjin"]
 height = 1.70788
@@ -77,5 +78,14 @@ volume_db = -20.18
 [node name="grind" type="AudioStreamPlayer3D" parent="sounds"]
 stream = SubResource("AudioStreamMP3_x31sx")
 volume_db = -20.18
+
+[node name="electric" type="AudioStreamPlayer3D" parent="sounds"]
+stream = ExtResource("11_p4s8d")
+volume_db = -17.298
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 
 [editable path="arrow"]
